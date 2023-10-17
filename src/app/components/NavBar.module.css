@@ -1,0 +1,17 @@
+.NavBar ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-inline-start: 0px;
+    flex-wrap: wrap;
+}
+
+.NavBar li {
+    list-style-type: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.NavBar span {
+    padding: 0 1rem;
+}
