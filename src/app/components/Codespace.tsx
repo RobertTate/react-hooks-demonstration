@@ -1,7 +1,7 @@
 'use client';
 
 import { Sandpack } from "@codesandbox/sandpack-react";
-import { atomDark } from "@codesandbox/sandpack-themes";
+import { freeCodeCampDark } from "@codesandbox/sandpack-themes";
 
 type CodespaceProps = {
     code: string;
@@ -20,9 +20,13 @@ export default function Codespace({code = defaultCode}: CodespaceProps) {
     return (
         <Sandpack
             files={files}
-            theme={atomDark}
+            theme={freeCodeCampDark}
             template="react"
-            options={{ editorHeight: "600px" }}
+            options={
+                { 
+                    editorHeight: "600px",
+                }
+            }
         />
     )
 }

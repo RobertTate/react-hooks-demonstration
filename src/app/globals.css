@@ -6,9 +6,10 @@ body {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #590099;
+
 }
 
 a:hover {
-    color: #0727c7;
+    color: #c03efc;
 }
