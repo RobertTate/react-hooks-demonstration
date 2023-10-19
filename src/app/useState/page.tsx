@@ -2,12 +2,8 @@
 
 import Codespace from '../components/Codespace'
 import Link from 'next/link'
-import displayCode from './displayCode';
-import Markdown from 'react-markdown';
-// @ts-expect-error
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-// @ts-expect-error
-import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import displayCode from './displayCode'
+import Content from '../components/Content'
 
 
 export default function UseStatePage() {
@@ -81,28 +77,7 @@ export default function UseStatePage() {
       <h2>Demo:</h2>
       <Codespace code={displayCode} />
       <Link href={'/'}>Back to home</Link>
-      <Markdown
-        children={markdown}
-        components={{
-          code(props) {
-            const { children, className, node, ...rest } = props
-            const match = /language-(\w+)/.exec(className || '')
-            return match ? (
-              <SyntaxHighlighter
-                {...rest}
-                children={String(children).replace(/\n$/, '')}
-                style={a11yDark}
-                language={match[1]}
-                PreTag="div"
-              />
-            ) : (
-              <code {...rest} className={className}>
-                {children}
-              </code>
-            )
-          }
-        }}
-      />
+      <Content markdown={markdown} />
     </main>
   )
 }
