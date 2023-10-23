@@ -6,13 +6,15 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 // @ts-expect-error
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
+import styles from './Content.module.css'
+
 type ContentProps = {
     markdown: string;
 }
 
 export default function Content({ markdown }: ContentProps) {
     return (
-        <Markdown
+        <Markdown className={styles.Content}
             components={{
                 code(props) {
                     const { children, className, node, ...rest } = props

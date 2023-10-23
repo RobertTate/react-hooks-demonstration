@@ -43,7 +43,6 @@ export default function UseStatePage() {
 
   When you update state with an **updater function**, React will pass the previous state value as an argument to your function. This is useful when you need to update state based on the previous state value.
   
-  ---
   ## Pitfalls
   ### Already Running Code
 
@@ -73,7 +72,7 @@ export default function UseStatePage() {
   return (
     <main>
       <h1>useState</h1>
-      <p><em>useState is a React Hook that lets you add a state variable to your component. When you update the state to a different value, you trigger a re-render.</em></p>
+      <p><em><strong>useState</strong> is a <strong>React Hook</strong> that lets you add a state variable to your component. When you update the state to a different value, you trigger a re-render.</em></p>
       <h2>Demo:</h2>
       <Codespace code={displayCode} />
       <Link href={'/'}>Back to home</Link>

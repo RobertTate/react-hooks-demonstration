@@ -43,7 +43,6 @@ export default function UseReducerPage() {
   dispatch({ type: 'increment', payload: 5 })
   \`\`\`
 
-  ---
   ## Pitfalls
   ### State is read-only
 
@@ -84,7 +83,7 @@ export default function UseReducerPage() {
   return (
     <main>
       <h1>useReducer</h1>
-      <p><em>useReducer is a React Hook that lets you add a reducer to your component.</em></p>
+      <p><em><strong>useReducer</strong> is a <strong>React Hook</strong> that lets you add a reducer to your component.</em></p>
       <h2>Demo:</h2>
       <Codespace code={displayCode} />
       <Link href={'/'}>Back to home</Link>

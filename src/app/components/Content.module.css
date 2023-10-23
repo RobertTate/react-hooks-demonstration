@@ -1,0 +1,16 @@
+.Content h2 {
+    font-size: 2rem;
+}
+
+.Content h3 {
+    font-size: 1.5rem;
+}
+
+.Content p {
+    font-size: 1.125rem;
+}
+
+.Content li p {
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem;
+}

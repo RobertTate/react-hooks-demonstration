@@ -6,7 +6,7 @@ import displayCode from './displayCode'
 import Content from '../components/Content'
 
 
-export default function UseReducerPage() {
+export default function UseRefPage() {
   const markdown = `
   ## Basics
   ### Referencing a value with a ref
@@ -38,7 +38,6 @@ export default function UseReducerPage() {
   return <div ref={ref} onClick={handleClick} /> // Once the DOM node is rendered, ref.current will be set to the DOM node
   \`\`\`
 
-  ---
   ## Pitfalls
   ### Do not read or write ref values in the render phase
 
@@ -73,7 +72,7 @@ export default function UseReducerPage() {
   return (
     <main>
       <h1>useRef</h1>
-      <p><em>useRef is a non-reactive React Hook, that lets you reference a value that can be updated without causing the component to re-render.</em></p>
+      <p><em><strong>useRef</strong> is a non-reactive <strong>React Hook</strong>, that lets you reference a value that can be updated without causing the component to re-render.</em></p>
       <h2>Demo:</h2>
       <Codespace code={displayCode} />
       <Link href={'/'}>Back to home</Link>
