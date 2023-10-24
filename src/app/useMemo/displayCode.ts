@@ -8,7 +8,7 @@ function square(number) {
 
 // A "costly" component to render a list of squared numbers
 function SquaredList({ limit }) {
-  console.log('Rendering SquaredList');
+  console.log('The SquaredList child re-rendered');
   const items = [];
   for (let i = 1; i <= limit; i++) {
     items.push(square(i));
@@ -24,7 +24,7 @@ export default function App() {
 
   // Log re-renders
   useEffect(() => {
-    console.log('Component Re-Rendered');
+    console.log('The parent re-rendered');
   }, [renderCount, num])
 
   // Cache squared value
@@ -41,7 +41,9 @@ export default function App() {
     <div>
       <button onClick={() => {
         return setRenderCount(renderCount + 1);
-      }}>Render</button>
+      }}>Re-Render</button>
+      <br></br>
+      <br></br>
       <input 
         type="number" 
         value={num} 

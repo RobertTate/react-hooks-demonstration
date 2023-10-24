@@ -49,7 +49,6 @@ export default function UseLayoutEffectPage() {
     <main>
       <h1>useLayoutEffect</h1>
       <p><em><strong>useLayoutEffect</strong> is a version of <strong>useEffect</strong> that fires before the browser repaints the screen.</em></p>
-      <h2>Demo:</h2>
       <Codespace code={displayCode} />
       <Link href={'/'}>Back to home</Link>
       <Content markdown={markdown} />

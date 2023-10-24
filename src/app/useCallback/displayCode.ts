@@ -8,6 +8,7 @@ const Button = React.memo(({ onClick, color }) => {
 });
 
 export default function App() {
+  // Using useState to store the count and color state variables
   const [count, setCount] = useState(0);
   const [color, setColor] = useState('yellow');
 

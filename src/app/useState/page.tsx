@@ -73,7 +73,6 @@ export default function UseStatePage() {
     <main>
       <h1>useState</h1>
       <p><em><strong>useState</strong> is a <strong>React Hook</strong> that lets you add a state variable to your component. When you update the state to a different value, you trigger a re-render.</em></p>
-      <h2>Demo:</h2>
       <Codespace code={displayCode} />
       <Link href={'/'}>Back to home</Link>
       <Content markdown={markdown} />
