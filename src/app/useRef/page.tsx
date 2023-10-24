@@ -74,7 +74,7 @@ export default function UseRefPage() {
       <h1>useRef</h1>
       <p><em><strong>useRef</strong> is a non-reactive <strong>React Hook</strong>, that lets you reference a value that can be updated without causing the component to re-render.</em></p>
       <Codespace code={displayCode} />
-      <Link href={'/'}>Back to home</Link>
+      <Link href={'/'}><strong>Back to home</strong></Link>
       <Content markdown={markdown} />
     </main>
   )

@@ -66,7 +66,7 @@ export default function UseMemoPage() {
       <h1>useMemo</h1>
       <p><em><strong>useMemo</strong> is a React Hook that lets you cache the result of a calculation between re-renders.</em></p>
       <Codespace code={displayCode} />
-      <Link href={'/'}>Back to home</Link>
+      <Link href={'/'}><strong>Back to home</strong></Link>
       <Content markdown={markdown} />
     </main>
   )

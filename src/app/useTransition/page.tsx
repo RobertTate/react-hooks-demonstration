@@ -57,9 +57,9 @@ export default function UseTransitionPage() {
   return (
     <main>
       <h1>useTransition</h1>
-      <p><em><strong>useCallback</strong> is a React Hook that lets you update the state without blocking the UI.</em></p>
+      <p><em><strong>useTransition</strong> is a React Hook that lets you update the state without blocking the UI.</em></p>
       <Codespace code={displayCode} />
-      <Link href={'/'}>Back to home</Link>
+      <Link href={'/'}><strong>Back to home</strong></Link>
       <Content markdown={markdown} />
     </main>
   )

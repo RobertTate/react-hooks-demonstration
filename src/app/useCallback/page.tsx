@@ -122,7 +122,7 @@ export default function UseCallbackPage() {
       <h1>useCallback</h1>
       <p><em><strong>useCallback</strong> is a React Hook that lets you cache a <strong>function definition</strong> between re-renders.</em></p>
       <Codespace code={displayCode} />
-      <Link href={'/'}>Back to home</Link>
+      <Link href={'/'}><strong>Back to home</strong></Link>
       <Content markdown={markdown} />
     </main>
   )

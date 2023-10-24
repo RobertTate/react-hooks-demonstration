@@ -85,7 +85,7 @@ export default function UseReducerPage() {
       <h1>useReducer</h1>
       <p><em><strong>useReducer</strong> is a <strong>React Hook</strong> that lets you add a reducer to your component.</em></p>
       <Codespace code={displayCode} />
-      <Link href={'/'}>Back to home</Link>
+      <Link href={'/'}><strong>Back to home</strong></Link>
       <Content markdown={markdown} />
     </main>
   )

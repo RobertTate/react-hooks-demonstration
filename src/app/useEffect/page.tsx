@@ -112,7 +112,7 @@ export default function UseEffectPage() {
       <h1>useEffect</h1>
       <p><em><strong>useEffect</strong> is a <strong>React Hook</strong> that lets you synchronize your components rendering cycle with an external system.</em></p>
       <Codespace code={displayCode} />
-      <Link href={'/'}>Back to home</Link>
+      <Link href={'/'}><strong>Back to home</strong></Link>
       <Content markdown={markdown} />
     </main>
   )
