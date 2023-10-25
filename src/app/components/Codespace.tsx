@@ -24,7 +24,7 @@ export default function Codespace({code = defaultCode}: CodespaceProps) {
             template="react"
             options={
                 { 
-                    editorHeight: "600px",
+                    editorHeight: "700px",
                 }
             }
         />

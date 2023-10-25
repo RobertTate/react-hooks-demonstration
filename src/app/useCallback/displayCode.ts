@@ -18,7 +18,7 @@ export default function App() {
     setCount(prevCount => prevCount + 1);
   }, []);
 
-  // Simulating a color change (not tied to button click for simplicity)
+  // Simulating a color change (not tied to the button click)
   useEffect(() => {
     const colors = ['yellow', 'orange', 'lime'];
     const interval = setInterval(() => {

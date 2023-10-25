@@ -1,6 +1,6 @@
 html {
     background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(156,144,255,1) 70%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(156, 144, 255) 70%);
     min-height: -webkit-fill-available;
 }
 
@@ -8,6 +8,11 @@ body {
     max-width: 1200px;
     margin: auto;
     padding: 0 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-block-end: 0.125rem;
 }
 
 a {

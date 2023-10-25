@@ -59,7 +59,7 @@ export default function UseRefPage() {
   
   **useRef** does not accept **initializer functions** like how **useState** or **useReducer** hooks do, however. 
   
-  Here's one approach to mitigate this issue: Set the ref value to null intially, and then do a one time assignment to the current property:
+  Here's one approach to mitigate this issue: Set the ref value to null initially, and then do a one-time assignment to the current property:
 
   \`\`\`js
   const ref = useRef(null)
@@ -72,7 +72,7 @@ export default function UseRefPage() {
   return (
     <main>
       <h1>useRef</h1>
-      <p><em><strong>useRef</strong> is a non-reactive <strong>React Hook</strong>, that lets you reference a value that can be updated without causing the component to re-render.</em></p>
+      <p><em><strong>useRef</strong> is a non-reactive React Hook, that lets you reference a value that can be updated without causing the component to re-render.</em></p>
       <Codespace code={displayCode} />
       <Link href={'/'}><strong>Back to home</strong></Link>
       <Content markdown={markdown} />

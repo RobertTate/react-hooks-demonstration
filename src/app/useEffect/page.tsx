@@ -20,7 +20,7 @@ export default function UseEffectPage() {
 
   ### ComponentDidUpdate
 
-  If you want to run an effect after a component updates, you can pass an array as a second argument to the **useEffect** hook. This array is called the **dependency array**. If the values in the **dependency array** change, the effect will run again.'
+  If you want to run an effect after a component updates, you can pass an array as a second argument to the **useEffect** hook. This array is called the **dependency array**. If the values in the **dependency array** change, the effect will run again.
   
   \`\`\`js
   const [count, setCount] = useState(0)
@@ -43,18 +43,6 @@ export default function UseEffectPage() {
   }, [])
   \`\`\`
 
-  ## Pitfalls
-
-  ### Dependency Array
-
-  If you pass an empty array as the second argument to the **useEffect** hook, the effect will only run once, after the first render. 
-  If you pass **no second argument** to the **useEffect** hook, the effect will run after **every render**.
-
-  \`\`\`js
-  useEffect(() => {
-    // runs after the first render, and also after every subsequent render
-  })
-  \`\`\`
 
   ### When to use useEffect
   As per the react documentation, if you're not trying to synchronize your component with an external system, you probably don't need to use **useEffect**.
@@ -105,12 +93,37 @@ export default function UseEffectPage() {
     )
   }
   \`\`\`
+
+  ## Pitfalls
+
+  ### Dependency Array
+
+  If you pass an empty array as the second argument to the **useEffect** hook, the effect will only run once, after the first render. 
+  If you pass **no second argument** to the **useEffect** hook, the effect will run after **every render**.
+
+  \`\`\`js
+  useEffect(() => {
+    // runs after the first render, and also after every subsequent render
+  })
+  \`\`\`
+
+  ### Infinite Loops
+
+  If you set state in an effect, and that state change causes the effect to run again, you will trigger an infinite loop.
+
+  \`\`\`js
+  useEffect(() => {
+    // causes a state update, which causes this effect to run again, which causes another state update, which causes this effect to run again, etc...
+    setCount(count + 1)
+  }, [count])
+  \`\`\`
+
   `
 
   return (
     <main>
       <h1>useEffect</h1>
-      <p><em><strong>useEffect</strong> is a <strong>React Hook</strong> that lets you synchronize your components rendering cycle with an external system.</em></p>
+      <p><em><strong>useEffect</strong> is a React Hook that lets you synchronize your components rendering cycle with an external system.</em></p>
       <Codespace code={displayCode} />
       <Link href={'/'}><strong>Back to home</strong></Link>
       <Content markdown={markdown} />

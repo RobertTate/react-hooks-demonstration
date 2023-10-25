@@ -23,10 +23,12 @@ export default function UseMemoPage() {
   This can be useful if you have a component that is expensive to render, and you want to prevent it from re-rendering unnecessarily.
 
   \`\`\`js
-  const MyMemoizedComponent = useMemo(() => {
-    return <SomeComponent data={data} />;
+  const memoizedChild = useMemo(() => {
+    return <SomeChildComponent data={data} />;
   }, [data]);
   \`\`\`
+
+  Note that **memoizedChild** is NOT a component, but rather, **it is a memoized instance of a component's render result**.
 
   ### Wrapping a component with the **memo** HOC (higher order component) instead of **useMemo**
 

@@ -37,8 +37,11 @@ export default function CollapsibleSection() {
           <br></br>
           <br></br>
           As such, when it opens, we have
-          to use JavaSript to determine the height, to expand
-          it to the right size. Otherwize, you may not see all the
+          to use JavaScript to determine the height, to expand
+          it to the right size. 
+          <br></br>
+          <br></br>
+          Otherwize, you may not see all the
           content.
         </p>
       </div>

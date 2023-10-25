@@ -64,6 +64,8 @@ export default function UseContextPage() {
   </MyContext.Provider>
   \`\`\`
 
+  ### Passing Objects
+
   It's also possible to pass **objects** to the **value** prop of the **Context.Provider** component.
   
   In this way, you could pass both the setter and getter of a useState hook to the **value** prop.

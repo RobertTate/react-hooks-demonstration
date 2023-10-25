@@ -11,7 +11,7 @@ export default function UseCallbackPage() {
   ### Usage
 
   The **useCallback** hook takes a **function argument**, and returns a **memoized version of that function**. 
-  The memoized function will only change if one of the dependencies in the dependancy array has changed.
+  The memoized function will only change if one of the dependencies in the dependency array has changed.
 
   \`\`\`js
   const memoizedFunction = useCallback(() => {
@@ -21,8 +21,8 @@ export default function UseCallbackPage() {
 
   ### Passing functions to child components
 
-  It's especially handy to cache a function definition like this when you need to **pass a callback to a child component** that depends on a value from the parent component.
-  Without cacheing the function, the child component would re-render every time the parent component re-renders, even if the value passed to the child component hasn't changed.
+  It's especially handy to cache a function definition when you need to **pass a callback to a child component** that depends on a value from the parent component.
+  Without caching the function, the child component would re-render every time the parent component re-renders, even if the value passed to the child component hasn't changed.
   This is because every time the parent re-renders, a new instance of the function definition is created, and **the child component sees it as a new prop**.
 
   \`\`\`js

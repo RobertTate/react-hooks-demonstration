@@ -10,13 +10,13 @@ export default function UseTransitionPage() {
   ## Basics
   ### What does "Render Blocking" mean?
 
-  When you update the state of a component, React will re-render the component. If the code inside component takes a long time to run, the UI will be blocked until the component finishes rendering. This is called **render blocking**.
+  When you update the state of a component, React will re-render that component, and potentially also its children. If the code inside a component takes a long time to run, the main thread will be blocked, and the UI will freeze until the code is finished running. This is called **render blocking**.
 
   ### Avoiding Render Blocking
 
   [Added in React 18](https://react.dev/blog/2021/12/17/react-conf-2021-recap#react-18-and-concurrent-features), **useTransition** provides a way to update the state without blocking the UI. 
   
-  The **useTransition** hook returns an array with two elements: **isPending** and **startTransition**.
+  The hook returns an array with two elements: **isPending** and **startTransition**.
 
   \`\`\`js
   const [isPending, startTransition] = useTransition()

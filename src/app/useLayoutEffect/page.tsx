@@ -8,6 +8,14 @@ import Content from '../components/Content'
 export default function UseLayoutEffectPage() {
   const markdown = `
   ## Basics
+  ### What is a Paint?
+
+  When the browser renders a web page, it goes through a process of **layout** and **paint**.
+
+  - **Layout** is the process of determining the size and position of each element on the page.
+
+  - **Paint** is the process of filling in the pixels on the screen.
+
   ### Usage
 
   The **useLayoutEffect** hook interface is identical to **useEffect**, taking a function as the argument, with an optional dependency array as the second argument. 
@@ -18,14 +26,6 @@ export default function UseLayoutEffectPage() {
     // runs after the first render, but before the browser repaints the screen
   }, [])
   \`\`\`
-
-  ### What is a Paint?
-
-  When the browser renders a web page, it goes through a process of **layout** and **paint**.
-
-  - **Layout** is the process of determining the size and position of each element on the page.
-
-  - **Paint** is the process of filling in the pixels on the screen.
 
   ### Why use useLayoutEffect?
 
