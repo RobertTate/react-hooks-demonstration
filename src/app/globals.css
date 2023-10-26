@@ -51,3 +51,8 @@ a {
 a:hover {
   color: #9000ff;
 }
+
+.BackToHomeLink {
+  display: block;
+  margin-top: 0.5rem;
+}

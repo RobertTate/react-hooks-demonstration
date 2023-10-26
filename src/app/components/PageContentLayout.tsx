@@ -14,8 +14,8 @@ export default function PageContentLayout({
   return (
     <>
       <Codespace code={displayCode} />
-      <Link href={"/"}>
-        <strong>Back to home</strong>
+      <Link className="BackToHomeLink" href={"/"}>
+        <strong>&larr; Back to home</strong>
       </Link>
       <Content markdown={pageMarkdown} />
     </>
