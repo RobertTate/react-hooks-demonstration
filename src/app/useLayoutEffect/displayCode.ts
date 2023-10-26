@@ -1,5 +1,4 @@
-const displayCode = 
-`import React, { useState, useRef, useLayoutEffect } from 'react';
+const displayCode = `import React, { useState, useRef, useLayoutEffect } from 'react';
 
 export default function CollapsibleSection() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,6 +46,6 @@ export default function CollapsibleSection() {
       </div>
     </div>
   );
-}`
+}`;
 
 export default displayCode;

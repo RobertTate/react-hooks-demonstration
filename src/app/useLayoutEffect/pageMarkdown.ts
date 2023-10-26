@@ -34,5 +34,5 @@ useLayoutEffect(() => {
 ### Performance
 
 Because **useLayoutEffect** runs synchronously after the first render, it can block the browser from painting the screen. This can cause performance issues, and should be used sparingly.
-`
+`;
 export default pageMarkdown;

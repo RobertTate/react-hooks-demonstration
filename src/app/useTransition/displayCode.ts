@@ -1,5 +1,4 @@
-const displayCode = 
-`import React, { useState, useTransition } from 'react';
+const displayCode = `import React, { useState, useTransition } from 'react';
 
 function SlowPost({ index }) {
   let startTime = performance.now();
@@ -59,6 +58,6 @@ export default function App() {
     </div>
   );
 }
-`
+`;
 
 export default displayCode;

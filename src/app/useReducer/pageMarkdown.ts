@@ -68,5 +68,5 @@ If your **initializer function** doesn't need any inputs to calculate the initia
 \`\`\`js
 const [state, dispatch] = useReducer(reducer, null, createInitialState)
 \`\`\`
-`
+`;
 export default pageMarkdown;

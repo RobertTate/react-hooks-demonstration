@@ -58,5 +58,5 @@ if (ref.current === null) {
   ref.current = getExpensiveInitialValue();
 }
 \`\`\`
-`
+`;
 export default pageMarkdown;

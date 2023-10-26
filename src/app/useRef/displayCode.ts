@@ -1,5 +1,4 @@
-const displayCode = 
-`import { useState, useEffect, useRef } from 'react';
+const displayCode = `import { useState, useEffect, useRef } from 'react';
 
 function ExampleOne() {
   const countRef = useRef(0);
@@ -63,8 +62,6 @@ export default function App() {
       <ExampleTwo />
     </>
   )
-}`
+}`;
 
 export default displayCode;
-
-

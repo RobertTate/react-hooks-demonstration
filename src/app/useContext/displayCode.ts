@@ -1,5 +1,4 @@
-const displayCode = 
-`import React, { createContext, useState, useContext } from 'react';
+const displayCode = `import React, { createContext, useState, useContext } from 'react';
 
 const ThemeContext = createContext(null);
 
@@ -36,6 +35,6 @@ const ThemeToggler = () => {
     </>
   ) 
 };
-`
+`;
 
 export default displayCode;

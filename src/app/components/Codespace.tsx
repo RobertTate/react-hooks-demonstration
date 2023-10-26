@@ -1,33 +1,32 @@
-'use client';
+"use client";
 
 import { Sandpack } from "@codesandbox/sandpack-react";
 import { freeCodeCampDark } from "@codesandbox/sandpack-themes";
 
 type CodespaceProps = {
-    code: string;
-}
+  code: string;
+};
 
-const defaultCode = 
-`export default function App() {
+const defaultCode = `export default function App() {
     return <h1>Hello world!</h1>
-}`
+}`;
 
-export default function Codespace({code = defaultCode}: CodespaceProps) {
-    const files = {
-        "/App.js": `${code}`,
-    }
+export default function Codespace({ code = defaultCode }: CodespaceProps) {
+  const files = {
+    "/App.js": `${code}`,
+  };
 
-    return (
-        <Sandpack
-            files={files}
-            theme={freeCodeCampDark}
-            template="react"
-            options={{
-                classes: {
-                  "sp-editor": "custom-editor",
-                  "sp-preview": "custom-preview"
-                },
-              }}
-        />
-    )
+  return (
+    <Sandpack
+      files={files}
+      theme={freeCodeCampDark}
+      template="react"
+      options={{
+        classes: {
+          "sp-editor": "custom-editor",
+          "sp-preview": "custom-preview",
+        },
+      }}
+    />
+  );
 }

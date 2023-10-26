@@ -53,5 +53,5 @@ if the dependencies change that are listed in the dependency array.
 While there's no significant harm to memoizing a function or a component prematurely, there's an argument to be made for only using it when necessary.
 
 See React's documentation on: [Should you add useMemo everywhere?](https://react.dev/reference/react/useMemo#should-you-add-usememo-everywhere) to learn more.
-`
+`;
 export default pageMarkdown;

@@ -1,5 +1,4 @@
-const displayCode = 
-`import React, { useState, useCallback, useEffect } from 'react';
+const displayCode = `import React, { useState, useCallback, useEffect } from 'react';
 
 // Memoized Button component that only re-renders when its props change
 const Button = React.memo(({ onClick, color }) => {
@@ -34,6 +33,6 @@ export default function App() {
     </div>
   );
 }
-`
+`;
 
 export default displayCode;

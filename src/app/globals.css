@@ -1,51 +1,53 @@
 html {
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(156, 144, 255) 70%);
-    min-height: -webkit-fill-available;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(156, 144, 255) 70%
+  );
+  min-height: -webkit-fill-available;
 }
 
 body {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 1rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin-block-end: 0.125rem;
+  font-size: 2.5rem;
+  margin-block-end: 0.125rem;
 }
 
 @media only screen and (min-width: 800px) {
-    div.sp-editor.custom-editor {
-        height: 500px;
-    }
-    
-    div.sp-preview.custom-preview {
-        height: 500px;
-    }
+  div.sp-editor.custom-editor {
+    height: 500px;
+  }
+
+  div.sp-preview.custom-preview {
+    height: 500px;
+  }
 }
 
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
 
-@media only screen and (min-width: 1200px) { 
-    h1 {
-        font-size: 3rem;
-    } 
+  div.sp-editor.custom-editor {
+    height: 700px;
+  }
 
-    div.sp-editor.custom-editor {
-        height: 700px;
-    }
-    
-    div.sp-preview.custom-preview {
-        height: 700px;
-    }
+  div.sp-preview.custom-preview {
+    height: 700px;
+  }
 }
 
 a {
-    text-decoration: none;
-    color: #590099;
-
+  text-decoration: none;
+  color: #590099;
 }
 
 a:hover {
-    color: #9000ff;
+  color: #9000ff;
 }

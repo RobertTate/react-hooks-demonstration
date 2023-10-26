@@ -1,5 +1,4 @@
-const displayCode = 
-`import { useState, useEffect, useRef } from 'react';
+const displayCode = `import { useState, useEffect, useRef } from 'react';
 
 // In this example, 
 // the external system is the browser's native dialog API.
@@ -41,6 +40,6 @@ export default function App() {
       </dialog>
     </>
   );
-}`
+}`;
 
 export default displayCode;

@@ -1,5 +1,4 @@
-const displayCode = 
-`import { useReducer } from 'react';
+const displayCode = `import { useReducer } from 'react';
 
 function reducer(state, action) {
   const { count } = state;
@@ -45,7 +44,6 @@ export default function Counter() {
       </button>
     </>
   );
-}`
-
+}`;
 
 export default displayCode;

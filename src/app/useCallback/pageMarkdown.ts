@@ -107,5 +107,5 @@ const Parent = () => {
   return <Child handleClick={handleClick} />
 }
 \`\`\`
-`
+`;
 export default pageMarkdown;

@@ -1,5 +1,4 @@
-const displayCode = 
-`import React, { useState, useMemo, useEffect } from 'react';
+const displayCode = `import React, { useState, useMemo, useEffect } from 'react';
 
 // A "costly" function to square a number
 function square(number) {
@@ -53,6 +52,6 @@ export default function App() {
       {memoizedSquaredList}
     </div>
   );
-}`
+}`;
 
 export default displayCode;

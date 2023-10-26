@@ -94,5 +94,5 @@ See the following article to understand more about the differences between the t
 - [Why React Context is Not a "State Management" Tool (and Why It Doesn't Replace Redux)](https://blog.isquaredsoftware.com/2021/01/context-redux-differences/#purpose-and-use-cases-for-context)
 
 Put simply, Redux is a much better choice for managing complex state that changes often, while Context is a better choice for managing simple state that is mostly static.
-`
+`;
 export default pageMarkdown;

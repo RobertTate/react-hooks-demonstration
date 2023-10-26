@@ -109,5 +109,5 @@ useEffect(() => {
   setCount(count + 1)
 }, [count])
 \`\`\`
-`
+`;
 export default pageMarkdown;

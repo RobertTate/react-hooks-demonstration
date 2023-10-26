@@ -58,5 +58,5 @@ function Counter() {
 \`\`\`
 
 In the example above, the count will only increment by one because the \`handleClick\` function is already running when the first \`setCount\` is called. The second \`setCount\` will use the original value of \`count\` (0) instead of the updated value (1).
-`
+`;
 export default pageMarkdown;

@@ -1,5 +1,4 @@
-const displayCode = 
-`import { useState } from 'react';
+const displayCode = `import { useState } from 'react';
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +21,6 @@ export default function App() {
       <button onClick={withUpdater}>Increment WITH an Updater Function</button>
     </>
   )
-}`
+}`;
 
 export default displayCode;

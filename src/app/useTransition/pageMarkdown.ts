@@ -40,6 +40,6 @@ function App() {
   )
 }
 \`\`\`
-`
+`;
 
 export default pageMarkdown;
