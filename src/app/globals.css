@@ -11,8 +11,33 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-block-end: 0.125rem;
+}
+
+@media only screen and (min-width: 800px) {
+    div.sp-editor.custom-editor {
+        height: 500px;
+    }
+    
+    div.sp-preview.custom-preview {
+        height: 500px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) { 
+    h1 {
+        font-size: 3rem;
+    } 
+
+    div.sp-editor.custom-editor {
+        height: 700px;
+    }
+    
+    div.sp-preview.custom-preview {
+        height: 700px;
+    }
 }
 
 a {

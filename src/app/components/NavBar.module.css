@@ -1,8 +1,21 @@
 .NavBar ul {
-    display: flex;
-    justify-content: space-evenly;
     padding-inline-start: 0px;
-    flex-wrap: wrap;
+}
+
+.NavBar ul span {
+    display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+    .NavBar ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .NavBar ul span {
+        display: inline;
+    }
 }
 
 .NavBar li {

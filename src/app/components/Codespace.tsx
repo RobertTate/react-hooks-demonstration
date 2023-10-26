@@ -22,11 +22,12 @@ export default function Codespace({code = defaultCode}: CodespaceProps) {
             files={files}
             theme={freeCodeCampDark}
             template="react"
-            options={
-                { 
-                    editorHeight: "700px",
-                }
-            }
+            options={{
+                classes: {
+                  "sp-editor": "custom-editor",
+                  "sp-preview": "custom-preview"
+                },
+              }}
         />
     )
 }
