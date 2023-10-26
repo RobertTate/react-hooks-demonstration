@@ -1,5 +1,3 @@
-'use client'
-
 import PageContentLayout from '../components/PageContentLayout'
 import displayCode from './displayCode'
 import pageMarkdown from './pageMarkdown'
