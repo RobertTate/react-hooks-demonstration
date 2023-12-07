@@ -11,6 +11,8 @@
   "dependencies": {
     "@codesandbox/sandpack-react": "^2.9.0",
     "@codesandbox/sandpack-themes": "^2.0.21",
+    "@mui/icons-material": "^5.14.19",
+    "@mui/x-tree-view": "^6.17.0",
     "framer-motion": "^10.16.4",
     "next": "13.5.5",
     "react": "^18",
