@@ -22,7 +22,7 @@ export default function NavBar() {
 
   return (
     <nav className={styles.NavBar}>
-      <Link href={"/"}>Home</Link>
+      <Link className={styles["NavBar-homelink"]} href={"/"}>Home</Link>
       <TreeView
         aria-label="hooks navigator"
         defaultCollapseIcon={<ExpandMoreIcon />}
@@ -56,6 +56,9 @@ export default function NavBar() {
           </li>
           <li onClick={handleToggle}>
             <Link href={"/useContext"}>useContext</Link>
+          </li>
+          <li onClick={handleToggle}>
+            <Link href={"/useSyncExternalStore"}>useSyncExternalStore</Link>
           </li>
         </TreeItem>
       </TreeView>

@@ -61,3 +61,7 @@ a:hover {
 .MuiTreeItem-content {
   padding-left: 0px;
 }
+
+.MuiTreeItem-content .MuiTreeItem-label {
+  font-size: 1.25rem;
+}
