@@ -3,7 +3,7 @@ export default function Home() {
     <main>
       <h1>React Hooks Demonstration</h1>
       <p>
-        Learn about React&apos;s most common hooks, how and when to use them,
+        Learn about <a href="https://react.dev/" target="_blank">React</a>&apos;s most common hooks, how and when to use them,
         and their common pitfalls.
       </p>
     </main>
