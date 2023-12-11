@@ -8,10 +8,14 @@ const fruitStore = {
   listeners: [],
   updateState(incomingState) {
     fruitStore.state = { ...fruitStore.state, ...incomingState };
+    // notify all listeners
     fruitStore.listeners.forEach(listener => listener());
   },
   subscribe(listener) {
+    // add listener to listeners array
     fruitStore.listeners.push(listener);
+
+    // return unsubscribe function for cleanup when component unmounts
     return () => {
       fruitStore.listeners = fruitStore.listeners.filter(l => l !== listener);
     };
