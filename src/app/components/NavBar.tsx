@@ -13,7 +13,7 @@ export default function NavBar() {
 
   const handleToggle = () => {
     setExpanded((prev) => {
-      if (prev.length) {
+      if (prev.length > 0) {
         return [];
       }
       return ['0'];
@@ -22,7 +22,20 @@ export default function NavBar() {
 
   return (
     <nav className={styles.NavBar}>
-      <Link className={styles["NavBar-homelink"]} href={"/"}>Home</Link>
+      <Link 
+        className={styles["NavBar-homelink"]} 
+        href={"/"}
+        onClick={() => {
+          setExpanded((prev) => {
+            if (prev.length > 0) {
+              return [];
+            }
+            return prev;
+          });
+        }}
+      >
+        Home
+      </Link>
       <TreeView
         aria-label="hooks navigator"
         defaultCollapseIcon={<ExpandMoreIcon />}
