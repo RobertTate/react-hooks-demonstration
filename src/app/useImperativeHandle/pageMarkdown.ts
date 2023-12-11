@@ -27,7 +27,7 @@ If you do this, you'll likely see a warning that says:
 
 This is because by default, your own custom components don't expose the DOM nodes inside themselves to the outside.
 
-To explicitely get around this, use the **\`React.forwardRef()\`** function.
+To explicitly get around this, use the **\`React.forwardRef()\`** function.
 
 \`\`\`js
 const Parent = () => {
