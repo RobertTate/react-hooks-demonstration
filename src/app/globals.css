@@ -15,7 +15,8 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  text-decoration: underline;
   margin-block-start: 0.125rem;
   margin-block-end: 0.125rem;
 }
@@ -58,7 +59,7 @@ a:hover {
   margin-top: 0.5rem;
 }
 
-.MuiTreeItem-content {
+.MuiTreeView-root .MuiTreeItem-root .MuiTreeItem-content {
   padding-left: 0px;
 }
 

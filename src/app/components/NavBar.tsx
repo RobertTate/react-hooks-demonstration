@@ -60,6 +60,9 @@ export default function NavBar() {
           <li onClick={handleToggle}>
             <Link href={"/useSyncExternalStore"}>useSyncExternalStore</Link>
           </li>
+          <li onClick={handleToggle}>
+            <Link href={"/useImperativeHandle"}>useImperativeHandle</Link>
+          </li>
         </TreeItem>
       </TreeView>
     </nav>
