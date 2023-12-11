@@ -24,7 +24,7 @@ The **\`getServerSnapshot\`** argument is an optional function that also returns
 
 If **\`getSnapshot\`** is only returning a subset of data from your external store, that component will only re-render when that subset of data changes. 
 
-This allows for more granular rerenders, and better performance.
+This allows for more granular re-renders, and better performance.
 `;
 
 export default pageMarkdown;
