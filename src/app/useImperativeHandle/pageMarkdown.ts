@@ -77,7 +77,7 @@ The **\`ref\`** argument is the ref object that is passed from the parent compon
 
 The **\`createHandle\`** argument is a function that returns an object with the interface you want to expose to the parent component.
 
-The **\`deps\`** argument is an optional array of dependencies. If any of them change, **\`createHandle\`** function will be called again to re-create the handle, and re-assign it to the ref.
+The **\`deps\`** argument is an optional array of dependencies. If any of them change, **\`createHandle\`** function will be called again to recreate the handle, and reassign it to the ref.
 `;
 
 export default pageMarkdown;
