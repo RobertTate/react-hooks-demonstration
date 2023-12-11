@@ -10,7 +10,7 @@ export default function UseSyncExternalStorePage() {
   return (
     <AnimatePresence>
       <motion.main
-        key="useState"
+        key="useSyncExternalStore"
         initial={{ y: 25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >

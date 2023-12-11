@@ -10,7 +10,7 @@ export default function UseLayoutEffectPage() {
   return (
     <AnimatePresence>
       <motion.main
-        key="useReducer"
+        key="useLayoutEffect"
         initial={{ y: 25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >

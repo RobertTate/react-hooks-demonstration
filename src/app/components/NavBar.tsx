@@ -77,6 +77,9 @@ export default function NavBar() {
           <li onClick={handleToggle}>
             <Link href={"/useImperativeHandle"}>useImperativeHandle</Link>
           </li>
+          <li onClick={handleToggle}>
+            <Link href={"/customHooks"}>Bonus: Custom Hooks</Link>
+          </li>
         </TreeItem>
       </TreeView>
     </nav>

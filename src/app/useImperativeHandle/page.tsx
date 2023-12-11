@@ -10,7 +10,7 @@ export default function UseImperativeHandlePage() {
   return (
     <AnimatePresence>
       <motion.main
-        key="useState"
+        key="useImperativeHandle"
         initial={{ y: 25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >

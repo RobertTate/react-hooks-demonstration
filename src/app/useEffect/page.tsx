@@ -10,7 +10,7 @@ export default function UseEffectPage() {
   return (
     <AnimatePresence>
       <motion.main
-        key="useReducer"
+        key="useEffect"
         initial={{ y: 25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >

@@ -10,7 +10,7 @@ export default function UseRefPage() {
   return (
     <AnimatePresence>
       <motion.main
-        key="useState"
+        key="useRef"
         initial={{ y: 25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >

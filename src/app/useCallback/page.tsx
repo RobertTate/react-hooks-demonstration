@@ -10,7 +10,7 @@ export default function UseCallbackPage() {
   return (
     <AnimatePresence>
       <motion.main
-        key="useReducer"
+        key="useCallback"
         initial={{ y: 25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
