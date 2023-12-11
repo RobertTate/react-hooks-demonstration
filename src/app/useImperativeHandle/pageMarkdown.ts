@@ -3,7 +3,7 @@ const pageMarkdown = `
 
 ### What is **\`forwardRef\`**?
 
-How does a parent component gain access to a DOM node that lives inside one of it's child components? 
+How does a parent component gain access to a DOM node that lives inside one of its child components? 
 
 You might attempt this by trying to pass a **\`ref\`** down to the child component, like so:
 
