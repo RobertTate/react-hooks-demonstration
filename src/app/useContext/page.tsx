@@ -1,6 +1,7 @@
-'use client'
+"use client";
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from "framer-motion";
+
 import PageContentLayout from "../components/PageContentLayout";
 import displayCode from "./displayCode";
 import pageMarkdown from "./pageMarkdown";

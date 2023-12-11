@@ -15,7 +15,7 @@ type ContentProps = {
 export default function Content({ markdown }: ContentProps) {
   return (
     <Markdown
-      className={styles.Content}
+      className={styles.content}
       components={{
         code(props) {
           const { children, className, node, ...rest } = props;

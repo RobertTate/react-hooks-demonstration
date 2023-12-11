@@ -1,27 +1,26 @@
 html {
-  background: rgb(255, 255, 255);
+  background: rgb(255 255 255);
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgb(156, 144, 255) 70%
+    rgb(255 255 255 / 100%) 0%,
+    rgb(156 144 255) 70%
   );
-  min-height: -webkit-fill-available;
+  min-height: 100%;
 }
 
 body {
-  max-width: 1200px;
   margin: auto;
   padding: 0 1rem;
+  max-width: 1200px;
 }
 
 h1 {
-  font-size: 1.5rem;
+  margin-block: 0.125rem 0.125rem;
   text-decoration: underline;
-  margin-block-start: 0.125rem;
-  margin-block-end: 0.125rem;
+  font-size: 1.5rem;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (width >= 800px) {
   div.sp-editor.custom-editor {
     height: 500px;
   }
@@ -31,7 +30,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (width >= 1200px) {
   h1 {
     font-size: 3rem;
   }
@@ -54,15 +53,12 @@ a:hover {
   color: #9000ff;
 }
 
-.BackToHomeLink {
-  display: block;
-  margin-top: 0.5rem;
-}
-
+/* stylelint-disable selector-class-pattern */
 .MuiTreeView-root .MuiTreeItem-root .MuiTreeItem-content {
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .MuiTreeItem-root .MuiTreeItem-content .MuiTreeItem-label {
   font-size: 1.25rem;
 }
+/* stylelint-enable selector-class-pattern */

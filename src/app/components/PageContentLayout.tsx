@@ -1,5 +1,4 @@
 import Codespace from "./Codespace";
-import Link from "next/link";
 import Content from "./Content";
 
 type PageContentLayoutProps = {

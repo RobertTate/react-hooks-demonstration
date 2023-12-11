@@ -1,6 +1,7 @@
-'use client'
+"use client";
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from "framer-motion";
+
 import PageContentLayout from "../components/PageContentLayout";
 import displayCode from "./displayCode";
 import pageMarkdown from "./pageMarkdown";
@@ -17,8 +18,8 @@ export default function UseLayoutEffectPage() {
         <p>
           <em>
             <strong>useLayoutEffect</strong> is a version of{" "}
-            <strong>useEffect</strong> that fires before the browser repaints the
-            screen.
+            <strong>useEffect</strong> that fires before the browser repaints
+            the screen.
           </em>
         </p>
         <PageContentLayout

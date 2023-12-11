@@ -1,22 +1,22 @@
-.NavBar {
-  padding-top: 1rem;
+.navbar {
   display: flex;
   flex-direction: column;
+  padding-top: 1rem;
   font-weight: bold;
 }
 
-.NavBar li {
+.navbar li {
+  margin-bottom: 0.5rem;
   list-style-type: none;
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 0.5rem;
 }
 
-.NavBar span {
+.navbar span {
   padding: 0 1rem;
 }
 
-.NavBar-homelink {
+.navbar-homelink {
   font-size: 1.25rem;
   font-weight: 700;
 }

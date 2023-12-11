@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { TreeItem } from "@mui/x-tree-view/TreeItem";
+import { TreeView } from "@mui/x-tree-view/TreeView";
 import Link from "next/link";
+import { useState } from "react";
+
 import styles from "./NavBar.module.css";
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import { TreeView } from '@mui/x-tree-view/TreeView';
-import { TreeItem } from '@mui/x-tree-view/TreeItem';
 
 export default function NavBar() {
   const [expanded, setExpanded] = useState<string[]>([]);
@@ -16,14 +17,14 @@ export default function NavBar() {
       if (prev.length > 0) {
         return [];
       }
-      return ['0'];
+      return ["0"];
     });
-  }
+  };
 
   return (
-    <nav className={styles.NavBar}>
-      <Link 
-        className={styles["NavBar-homelink"]} 
+    <nav className={styles["navbar"]}>
+      <Link
+        className={styles["navbar-homelink"]}
         href={"/"}
         onClick={() => {
           setExpanded((prev) => {
