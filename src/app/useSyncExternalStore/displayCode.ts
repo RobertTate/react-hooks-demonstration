@@ -6,8 +6,8 @@ const fruitStore = {
     orangeCount: 0,
   },
   listeners: [],
-  setState(newState) {
-    fruitStore.state = { ...fruitStore.state, ...newState };
+  updateState(incomingState) {
+    fruitStore.state = { ...fruitStore.state, ...incomingState };
     fruitStore.listeners.forEach(listener => listener());
   },
   subscribe(listener) {
@@ -33,7 +33,7 @@ function AppleCount() {
   return (
     <>
       <h1>Apple Count: {appleCount}</h1>
-      <button onClick={() => fruitStore.setState({ appleCount: appleCount + 1 })}>
+      <button onClick={() => fruitStore.updateState({ appleCount: appleCount + 1 })}>
       Add Apple
       </button>
     </>
@@ -52,7 +52,7 @@ function OrangeCount() {
   return (
     <>
       <h1>Orange Count: {orangeCount}</h1>
-      <button onClick={() => fruitStore.setState({ orangeCount: orangeCount + 1 })}>
+      <button onClick={() => fruitStore.updateState({ orangeCount: orangeCount + 1 })}>
         Add Orange
       </button>
     </>
