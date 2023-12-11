@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format:css": "prettier --write **/*.css && stylelint **/*.css --fix",
+    "format:all": "prettier . --write"
   },
   "dependencies": {
     "@codesandbox/sandpack-react": "^2.9.0",
@@ -22,12 +24,16 @@
     "remark-gfm": "^4.0.0"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "13.5.5",
     "prettier": "3.0.3",
+    "stylelint": "^16.0.2",
+    "stylelint-config-concentric-order": "^5.2.0",
+    "stylelint-config-standard": "^35.0.0",
     "typescript": "^5"
   }
 }
