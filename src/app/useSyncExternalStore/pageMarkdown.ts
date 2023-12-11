@@ -16,13 +16,13 @@ When you set up your store, you need to invoke that callback function whenever t
 
 The **\`getSnapshot\`** argument is a function you create, which should return the data from your store that you want your component to have access to.
 
-Every time your **\`subscribe\`** callback is invoked, **\`getSnapshot\`** runs again. If a diff is detected between the last and next snapshots, the component will rerender.
+Every time your **\`subscribe\`** callback is invoked, **\`getSnapshot\`** runs again. If a diff is detected between the last and next snapshots, the component will re-render.
 
 The **\`getServerSnapshot\`** argument is an optional function that also returns the initial snapshot of data from your external store. This argument is needed specifically for server-side rendering.
 
 ### Granular Rerenders
 
-If **\`getSnapshot\`** is only returning a subset of data from your external store, that component will only rerender when that subset of data changes. 
+If **\`getSnapshot\`** is only returning a subset of data from your external store, that component will only re-render when that subset of data changes. 
 
 This allows for more granular rerenders, and better performance.
 `;
