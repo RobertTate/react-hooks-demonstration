@@ -20,7 +20,7 @@ Every time your **\`subscribe\`** callback is invoked, **\`getSnapshot\`** runs 
 
 The **\`getServerSnapshot\`** argument is an optional function that also returns the initial snapshot of data from your external store. This argument is needed specifically for server-side rendering.
 
-### Granular Rerenders
+### Granular Re-renders
 
 If **\`getSnapshot\`** is only returning a subset of data from your external store, that component will only re-render when that subset of data changes. 
 
