@@ -7,8 +7,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "React Hooks Demo",
-  description: "",
+  title: "React Hooks Tutorial",
+  description: "A demonstration site to help teach the majority of hooks provided by React.js",
+  icons: {
+    icon: "/reactIcon.svg"
+  }
 };
 
 export default function RootLayout({

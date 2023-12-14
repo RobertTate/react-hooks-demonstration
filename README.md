@@ -1,4 +1,4 @@
-# React Hooks Demonstration
+# React Hooks Tutorial
 
 Learn about React's most common hooks, how and when to use them, and their common pitfalls.
 
